@@ -1,0 +1,47 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
+
+const _geist = Geist({ subsets: ["latin"] })
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: "Método - Curso ENEM/UEMA | Redação Nota Máxima",
+  description:
+    "Prepare-se para o ENEM e UEMA com o curso que transforma sua redação em nota máxima. Correções personalizadas, aulas ao vivo e suporte completo.",
+  generator: "mikaeldev angelodev",
+  icons: {
+    icon: [
+      {
+        url: "/images/logo-metodo.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/images/logo-metodo.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/images/logo-metodo.png",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: "/images/logo-metodo.png",
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="pt-BR">
+      <body className={`font-sans antialiased`}>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  )
+}

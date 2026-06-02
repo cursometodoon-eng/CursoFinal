@@ -74,7 +74,7 @@ export function PricingSection() {
                   </div>
 
                   <a
-                    href="https://cursometodo.ensinoagilpay.com/turma-concursos"
+                    href="https://cursometodo.ensinoagilpay.com/turma-concursos-promo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full"
@@ -120,7 +120,7 @@ export function PricingSection() {
                   </p>
 
                   <a
-                    href="https://cursometodo.ensinoagilpay.com/turma-concursos-6-meses"
+                    href="https://cursometodo.ensinoagilpay.com/turma-concursos-promo-6-meses"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full"
